@@ -1,0 +1,26 @@
+{
+  "name": "desafioqa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "test:headless": "npx cypress run --browser chrome -- headless"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.0",
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@bahmutov/cypress-esbuild-preprocessor": "latest",
+    "@faker-js/faker": "^8.3.1",
+    "cypress": "latest",
+    "typescript": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "**/[filepath]/**/*.ts"
+    ]
+  }
+}

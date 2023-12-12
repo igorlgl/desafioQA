@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "nodenext",
+  },
+  "types": ["cypress", "@4tw/cypress-drag-drop"],
+  "include": [
+    "cypress/",
+  ],
+  "exclude": [
+    "node_modules",
+  ],
+}
